@@ -5,10 +5,9 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var moviesRouter = require('./routes/movies');
-//var bodyParser = require('body-parser');
 var app = express();
 
-//app.use(bodyParser.json());
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

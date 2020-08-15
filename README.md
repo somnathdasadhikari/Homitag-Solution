@@ -9,9 +9,9 @@ Technology Stack :
 6> Docker
 
 To Run MovieService App :
-  docker build -t movie-service-app .
-  docker-compose run movie-service-app npm run migrate
-  docker-compose up
+  docker build -t movie-service-app . ,
+  docker-compose run movie-service-app npm run migrate ,
+  docker-compose up ,
   
 To run the unit test for MovieService App :
   docker-compose run movie-service-app npm test
@@ -22,9 +22,9 @@ Root URL for MovieService App :
 
 
 To Run GenreService App :
-  docker build -t genre-service-app .
-  docker-compose run genre-service-app npm run migrate
-  docker-compose up
+  docker build -t genre-service-app . ,
+  docker-compose run genre-service-app npm run migrate ,
+  docker-compose up ,
   
 To run the unit test for GenreService App :
   docker-compose run genre-service-app npm test

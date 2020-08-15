@@ -3,9 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "pm2": "pm2 start processes.json --no-daemon",
+    "start": "node ./bin/www",
+    "test": "jest",
+    "migrate": "node ./bin/migrate.js"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",

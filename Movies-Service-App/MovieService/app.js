@@ -17,4 +17,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/movies', moviesRouter);
 
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`app running on port ${PORT}`)
+});
+
 module.exports = app;
